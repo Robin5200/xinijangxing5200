@@ -1,0 +1,694 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>新疆2026自驾旅行助手｜V4 高端无地图版</title>
+<meta name="description" content="新疆2026自驾旅行助手：28天行程、婚纱照、赛里木湖、昭苏夏塔、特克斯、独库公路、补能和每日攻略。">
+<style>
+
+:root{--ink:#101828;--muted:#667085;--paper:#fffaf2;--bg:#f5efe3;--blue:#1c7891;--cyan:#43a7bd;--orange:#e07a5f;--green:#4f7d66;--night:#0b132b;--card:rgba(255,255,255,.92);--line:rgba(16,24,40,.10);--shadow:0 18px 50px rgba(16,24,40,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",Arial,sans-serif;color:var(--ink);background:radial-gradient(circle at 16% 4%,rgba(67,167,189,.20),transparent 24%),radial-gradient(circle at 86% 7%,rgba(224,122,95,.18),transparent 28%),linear-gradient(180deg,#f6ead8 0%,#f7f1e7 45%,#edf5f1 100%);line-height:1.66}a{color:inherit}.hero{min-height:88vh;display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center;padding:48px 6vw 32px}.hero-copy{position:relative;z-index:2}.badge{display:inline-flex;gap:8px;align-items:center;padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.70);border:1px solid var(--line);font-weight:900;color:#1b6374}h1{font-size:clamp(44px,7.5vw,96px);line-height:.94;letter-spacing:-3px;margin:22px 0 18px}h1 span{display:block;background:linear-gradient(135deg,#0b132b,#1c7891 55%,#e07a5f);-webkit-background-clip:text;color:transparent}.lead{font-size:19px;color:#455364;max-width:760px;margin:0 0 26px}.actions{display:flex;gap:10px;flex-wrap:wrap}.btn{display:inline-block;text-decoration:none;border-radius:999px;padding:13px 18px;background:var(--night);color:white;font-weight:900;box-shadow:0 10px 30px rgba(11,19,43,.18)}.btn.secondary{background:white;color:var(--ink);border:1px solid var(--line)}.hero-visual{height:70vh;min-height:500px;border-radius:42px;overflow:hidden;position:relative;box-shadow:var(--shadow)}.hero-visual img{width:100%;height:100%;object-fit:cover;display:block}.hero-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.03),rgba(0,0,0,.45))}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:28px;max-width:800px}.stat{background:rgba(255,255,255,.78);border:1px solid var(--line);border-radius:22px;padding:16px;box-shadow:0 10px 30px rgba(16,24,40,.08)}.stat b{font-size:28px;display:block}.stat span{font-size:13px;color:var(--muted)}.nav{position:sticky;top:0;z-index:20;display:flex;gap:8px;overflow-x:auto;padding:12px 6vw;background:rgba(245,239,227,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.nav a{white-space:nowrap;text-decoration:none;font-weight:900;background:#fff;border:1px solid var(--line);border-radius:999px;padding:9px 13px;box-shadow:0 8px 22px rgba(16,24,40,.06)}main{max-width:1180px;margin:0 auto;padding:0 18px 70px}.section-head{display:flex;justify-content:space-between;gap:18px;align-items:end;margin:52px 0 18px}h2{font-size:clamp(31px,5vw,56px);line-height:1;margin:0;letter-spacing:-1.4px}.section-head p{margin:0;color:var(--muted);max-width:560px}.panel,.phase-panel,.day-card,.check-card,.detail-card{background:var(--card);border:1px solid var(--line);border-radius:28px;box-shadow:var(--shadow)}.panel{padding:24px}.overview-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:16px}.route-map{min-height:460px;border-radius:28px;padding:22px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);overflow:hidden}.route-map h3{margin:0 0 10px;font-size:26px}.map-svg{width:100%;height:auto;display:block}.chips,.pill-row,.meta{display:flex;gap:8px;flex-wrap:wrap}.chip,.pill-row span,.meta span{display:inline-block;border-radius:999px;padding:7px 10px;background:#eef6f7;color:#1f6576;font-size:13px;font-weight:900}.focus-grid,.check-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.focus{min-height:250px;border-radius:26px;padding:20px;color:white;display:flex;align-items:end;box-shadow:var(--shadow);background-size:cover;background-position:center;position:relative;overflow:hidden}.focus:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.04),rgba(0,0,0,.72))}.focus div{position:relative;z-index:1}.focus h3{font-size:25px;margin:0 0 8px;line-height:1.1}.phase-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.phase-panel{padding:18px}.phase-panel h3{margin:0 0 10px;font-size:20px}.phase-links{display:grid;gap:7px}.phase-links a{text-decoration:none;color:#245f70;background:#eef6f7;border-radius:14px;padding:9px;font-size:13px;font-weight:800}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.day-card{overflow:hidden;text-decoration:none;color:inherit;display:block;transition:.18s transform}.day-card:hover{transform:translateY(-4px)}.photo{height:180px;position:relative;background:#d8e6e8;overflow:hidden}.photo img{width:100%;height:100%;object-fit:cover;display:block}.photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.06),rgba(0,0,0,.55))}.photo span{position:absolute;left:14px;bottom:12px;z-index:1;background:rgba(255,255,255,.90);color:#134f60;border-radius:999px;padding:6px 10px;font-weight:900}.card-body{padding:16px}.kicker{margin:0 0 4px;color:var(--blue);font-weight:900}.card-body h3{font-size:22px;line-height:1.16;margin:0 0 10px}.detail-hero{min-height:420px;position:relative;display:flex;align-items:end;color:white;padding:32px 6vw;background-size:cover;background-position:center}.detail-hero:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.10),rgba(0,0,0,.72))}.detail-hero>div{position:relative;z-index:1;max-width:980px}.detail-hero h1{color:white;background:none;-webkit-background-clip:initial;letter-spacing:-1.8px}.detail-hero h1 span{color:white;background:none;-webkit-background-clip:initial}.detail-main{max-width:1080px;margin:0 auto;padding:26px 18px 70px}.detail-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.detail-card{padding:18px}.detail-card h3{font-size:22px;margin:0 0 10px}ul{margin:0;padding-left:20px;color:#344054}li{margin:4px 0}.warn{background:#fff3e8;color:#984a35;border-radius:14px;padding:10px}.energy-table{width:100%;border-collapse:separate;border-spacing:0 10px}.energy-table th{text-align:left;color:var(--muted);font-size:13px;padding:0 10px}.energy-table td{background:white;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:12px 10px;vertical-align:top;font-size:14px}.energy-table td:first-child{border-left:1px solid var(--line);border-radius:16px 0 0 16px}.energy-table td:last-child{border-right:1px solid var(--line);border-radius:0 16px 16px 0}.check-card{padding:20px}.check-card h3{font-size:22px;margin:0 0 10px}.note{background:#fff3e8;color:#864531;border-radius:18px;padding:16px;border:1px solid rgba(224,122,95,.20)}.sources{font-size:13px;color:var(--muted)}footer{padding:34px 18px;text-align:center;color:var(--muted)}.pager{display:flex;justify-content:space-between;gap:12px;margin-top:24px}.pager a{text-decoration:none;background:#fff;border:1px solid var(--line);border-radius:999px;padding:10px 14px;font-weight:900}
+@media(max-width:900px){.hero,.overview-grid,.detail-grid{grid-template-columns:1fr}.hero-visual{height:48vh;min-height:340px}.stats,.phase-grid,.focus-grid,.check-grid,.cards{grid-template-columns:1fr 1fr}.section-head{display:block}.section-head p{margin-top:10px}}
+@media(max-width:620px){.hero{padding:32px 18px}h1{letter-spacing:-1.6px}.stats,.phase-grid,.focus-grid,.check-grid,.cards{grid-template-columns:1fr}.photo{height:190px}.energy-table{font-size:13px;display:block;overflow-x:auto;white-space:nowrap}.detail-hero{min-height:360px;padding:24px 18px}.detail-main{padding:20px 18px 50px}.pager{display:grid}}
+
+.exact-map-card{background:#fff;border:1px solid var(--line);border-radius:28px;box-shadow:var(--shadow);overflow:hidden}
+.map-toolbar{display:flex;gap:8px;flex-wrap:wrap;padding:14px;background:#fff;border-bottom:1px solid var(--line)}
+.map-toolbar button,.map-toolbar a{border:1px solid var(--line);background:#f8fbfc;color:#164f60;border-radius:999px;padding:9px 12px;font-weight:900;cursor:pointer;text-decoration:none}
+.map-toolbar button.active{background:#0b132b;color:#fff}
+.map-frame{width:100%;height:520px;border:0;display:block;background:#eef6f7}
+.map-hint{padding:12px 14px;color:var(--muted);font-size:13px;background:#fff}
+@media(max-width:620px){.map-frame{height:430px}.map-toolbar{overflow-x:auto;flex-wrap:nowrap}.map-toolbar button,.map-toolbar a{white-space:nowrap}}
+
+.static-route-map{padding:0;overflow:hidden;background:#fff}.static-route-map img{width:100%;height:auto;display:block;border-radius:28px}.exact-map-card{display:none}
+
+.premium-hero{min-height:100vh;position:relative;display:flex;align-items:flex-end;padding:0 6vw 7vh;overflow:hidden;color:white}
+.premium-hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.premium-mask{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.72));z-index:1}
+.premium-copy{position:relative;z-index:2;max-width:980px}
+.premium-copy .badge{background:rgba(255,255,255,.18);color:#fff;border-color:rgba(255,255,255,.28);backdrop-filter:blur(16px)}
+.premium-copy h1{font-size:clamp(50px,8.5vw,118px);line-height:.92;color:#fff;margin:22px 0 14px;letter-spacing:-4px}
+.premium-copy p{font-size:clamp(18px,2.2vw,28px);margin:0 0 26px;color:rgba(255,255,255,.88)}
+.big-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.big-stats article{background:rgba(255,255,255,.92);border:1px solid var(--line);border-radius:30px;padding:26px;box-shadow:var(--shadow)}
+.big-stats b{display:block;font-size:clamp(28px,4vw,52px);line-height:1;color:#0b132b}
+.big-stats span{display:block;margin-top:10px;color:var(--muted);font-weight:800}
+.feature-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.feature-grid article{min-height:430px;border-radius:34px;background-size:cover;background-position:center;position:relative;overflow:hidden;box-shadow:var(--shadow);color:#fff;display:flex;align-items:flex-end}
+.feature-grid article:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.76))}
+.feature-grid article div{position:relative;z-index:1;padding:28px}
+.feature-grid span{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:6px 10px;font-weight:900}
+.feature-grid h3{font-size:38px;line-height:1;margin:12px 0 8px}
+.feature-grid p{font-size:17px;color:rgba(255,255,255,.88);margin:0}
+.timeline{position:relative;display:grid;gap:12px}
+.timeline:before{content:"";position:absolute;left:22px;top:0;bottom:0;width:4px;border-radius:999px;background:linear-gradient(#1c7891,#e07a5f,#0b132b)}
+.timeline-item{position:relative;margin-left:48px;text-decoration:none;background:rgba(255,255,255,.92);border:1px solid var(--line);border-radius:22px;padding:15px 18px;box-shadow:0 10px 28px rgba(16,24,40,.08);display:grid;gap:4px}
+.timeline-item:before{content:"";position:absolute;left:-36px;top:22px;width:16px;height:16px;border-radius:50%;background:#fff;border:5px solid #1c7891}
+.timeline-item span{color:#1c7891;font-weight:900}
+.timeline-item b{font-size:18px}
+@media(max-width:820px){.big-stats,.feature-grid{grid-template-columns:1fr}.premium-hero{min-height:86vh;padding:0 20px 60px}.premium-copy h1{letter-spacing:-2px}}
+
+.photo{position:relative}
+.photo-actions{position:absolute;right:10px;bottom:10px;z-index:4;display:flex;gap:6px;align-items:center}
+.upload-btn,.edit-btn{border:0;border-radius:999px;padding:7px 10px;background:rgba(255,255,255,.92);color:#0b132b;font-weight:900;font-size:12px;box-shadow:0 8px 20px rgba(0,0,0,.14);cursor:pointer}
+.upload-btn input{display:none}.edit-btn{background:rgba(11,19,43,.78);color:#fff}
+.user-photo-badge{position:absolute;left:14px;top:12px;z-index:4;background:rgba(224,122,95,.94);color:#fff;border-radius:999px;padding:6px 10px;font-style:normal;font-size:12px;font-weight:900}
+.day-card .photo img{transition:opacity .25s ease}
+@media(max-width:620px){.photo-actions{right:8px;bottom:8px}.upload-btn,.edit-btn{font-size:11px;padding:6px 8px}}
+
+/* 修复版：即使图片外链失效，也显示渐变封面，不出现白底问号 */
+.photo,.hero-visual,.premium-hero,.detail-hero{
+  background:
+    radial-gradient(circle at 18% 18%, rgba(255,255,255,.28), transparent 22%),
+    linear-gradient(135deg,#0b132b 0%,#1c7891 48%,#e07a5f 100%) !important;
+}
+.photo img.img-error,.hero-visual img.img-error,.premium-hero>img.img-error{display:none !important}
+.photo::before{
+  content:"";
+  position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(0,0,0,.04),rgba(0,0,0,.42));
+  z-index:1;pointer-events:none;
+}
+.photo span,.photo-actions,.user-photo-badge{z-index:4}
+.card-body{position:relative;z-index:2}
+
+
+.photo-actions{gap:6px}
+.edit-btn{border:0;border-radius:999px;padding:7px 10px;background:rgba(11,19,43,.78);color:#fff;font-weight:900;font-size:12px;box-shadow:0 8px 20px rgba(0,0,0,.14);cursor:pointer}
+.memory-hero{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;align-items:center;background:linear-gradient(135deg,#0b132b,#1c7891 58%,#e07a5f);color:#fff;border-radius:34px;padding:28px;box-shadow:var(--shadow)}
+.memory-hero h3{font-size:clamp(32px,5vw,64px);line-height:1;margin:8px 0}.memory-hero p{color:rgba(255,255,255,.82)}
+.memory-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.memory-stats article{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.24);border-radius:22px;padding:16px}.memory-stats b{font-size:34px;display:block}.memory-stats span{font-size:13px;color:rgba(255,255,255,.8)}
+.memory-wall{columns:4 180px;column-gap:12px;margin-top:16px}.memory-wall.empty{columns:auto;background:#fff;border:1px dashed var(--line);border-radius:24px;padding:24px;color:var(--muted)}
+.memory-photo{break-inside:avoid;border:0;padding:0;margin:0 0 12px;width:100%;border-radius:22px;overflow:hidden;background:#fff;box-shadow:0 12px 30px rgba(16,24,40,.10);position:relative;cursor:pointer}.memory-photo img{width:100%;display:block}.memory-photo span{position:absolute;left:10px;right:10px;bottom:10px;background:rgba(11,19,43,.68);color:#fff;border-radius:999px;padding:6px 9px;font-size:12px;font-weight:900}
+.message-board{margin-top:24px;background:#fff;border:1px solid var(--line);border-radius:30px;padding:22px;box-shadow:var(--shadow)}.board-head{display:flex;justify-content:space-between;gap:14px;align-items:center}.board-head h3{font-size:28px;margin:0}.board-head p{color:var(--muted);margin:4px 0 0}.board-head button,.save-message{border:0;background:#0b132b;color:#fff;border-radius:999px;padding:11px 16px;font-weight:900;cursor:pointer}
+.message-list{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}.message-list article{background:#f8fbfc;border:1px solid var(--line);border-radius:20px;padding:16px}.message-list span{color:#1c7891;font-weight:900;font-size:13px}.message-list h4{font-size:19px;margin:6px 0}.message-list p{color:#344054}.message-list button{border:0;background:#fff;color:#984a35;border-radius:999px;padding:7px 10px;font-weight:900}
+.album-modal,.photo-viewer{position:fixed;inset:0;background:rgba(11,19,43,.72);z-index:99;display:none;align-items:flex-end}.album-modal.show,.photo-viewer.show{display:flex}.album-sheet{width:100%;max-height:88vh;overflow:auto;background:#f7f1e7;border-radius:34px 34px 0 0;padding:22px 6vw 38px}.album-close,.viewer-close{position:sticky;top:0;float:right;border:0;background:#0b132b;color:#fff;border-radius:999px;padding:10px 14px;font-weight:900}.album-tip{color:var(--muted)}.album-editor{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.album-item{background:#fff;border:1px solid var(--line);border-radius:24px;overflow:hidden}.album-item img{width:100%;height:180px;object-fit:cover}.album-actions{padding:12px;display:flex;gap:6px;flex-wrap:wrap}.album-actions b{width:100%;color:#1c7891}.album-actions button{border:0;background:#eef6f7;border-radius:999px;padding:7px 10px;font-weight:900}.album-actions button[data-del]{background:#fff3e8;color:#984a35}.album-actions button:disabled{opacity:.4}.message-sheet label{display:grid;gap:6px;margin:14px 0;font-weight:900}.message-sheet input,.message-sheet textarea{border:1px solid var(--line);border-radius:16px;padding:12px;font:inherit}.message-sheet textarea{min-height:120px}.photo-viewer{align-items:center;justify-content:center;flex-direction:column;padding:20px}.photo-viewer img{max-width:92vw;max-height:78vh;border-radius:24px;box-shadow:var(--shadow)}.photo-viewer p{color:#fff;font-weight:900}.empty-msg{color:var(--muted)}
+@media(max-width:820px){.memory-hero,.message-list,.album-editor{grid-template-columns:1fr}.memory-stats{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:620px){.memory-stats{grid-template-columns:1fr}.board-head{display:block}.message-list{grid-template-columns:1fr}}
+
+</style>
+</head>
+<body>
+<header class="premium-hero">
+  <img src="https://www.news.cn/foto/20260202/532f62a0ad7d4338a207cc5f5e2c916c/20260202532f62a0ad7d4338a207cc5f5e2c916c_20260128f3de70e877634d5a890c441e254e919f.jpg" alt="赛里木湖" onerror="this.classList.add('img-error')">
+  <div class="premium-mask"></div>
+  <div class="premium-copy">
+    <span class="badge">🚙 乐道 L90 Ultra · 7.15–8.11</span>
+    <h1>2026 新疆自驾之旅</h1>
+    <p>马鞍山 → 新疆伊犁 → 独库公路 → 郑州 → 马鞍山</p>
+    <div class="actions">
+      <a class="btn" href="#days">查看 28 天行程</a>
+      <a class="btn secondary" href="#energy">补能作战表</a>
+    </div>
+  </div>
+</header>
+
+<nav class="nav">
+  <a href="#overview">概览</a>
+  <a href="#highlights">亮点</a>
+  <a href="#timeline">时间轴</a>
+  <a href="#days">每日卡片</a>
+  <a href="#energy">补能</a>
+  <a href="#memories">回忆录</a><a href="#checklist">准备</a>
+</nav>
+
+<main>
+<section id="overview">
+  <div class="section-head"><h2>旅行概览</h2><p>去返程高效赶路，新疆境内慢游；围绕赛湖婚纱照、伊犁草原和独库公路设计。</p></div>
+  <div class="big-stats">
+    <article><b>28天</b><span>7.15–8.11</span></article>
+    <article><b>约13000km</b><span>全程估算</span></article>
+    <article><b>4人</b><span>自驾同行</span></article>
+    <article><b>7.29</b><span>赛湖/果子沟婚纱照</span></article>
+    <article><b>不去那拉提</b><span>避开大客流</span></article>
+    <article><b>郑州</b><span>返程固定经停</span></article>
+  </div>
+</section>
+
+<section id="highlights">
+  <div class="section-head"><h2>核心亮点</h2><p>用高清大图做旅行专题，比地图更适合分享给朋友和家人。</p></div>
+  <div class="feature-grid">
+    <article style="background-image:linear-gradient(135deg,rgba(11,19,43,.55),rgba(224,122,95,.35)),url('https://www.news.cn/foto/20260202/532f62a0ad7d4338a207cc5f5e2c916c/20260202532f62a0ad7d4338a207cc5f5e2c916c_20260128f56a114a31134b9f8226746c4aedcfad.jpg')"><div><span>D8-D9</span><h3>赛里木湖</h3><p>双日慢游，东岸、环湖、日出、日落和婚纱取景都不赶。</p></div></article>
+    <article style="background-image:linear-gradient(135deg,rgba(11,19,43,.55),rgba(224,122,95,.35)),url('https://www.news.cn/photo/20260513/6802aa2a4230452cb9db7f35706d441c/202605136802aa2a4230452cb9db7f35706d441c_202605130ef088ac87644f42ab412fd4a7920851.jpg')"><div><span>D10 / D15</span><h3>果子沟</h3><p>果子沟大桥与山谷风景，是婚纱照和伊犁门户的重点。</p></div></article>
+    <article style="background-image:linear-gradient(135deg,rgba(11,19,43,.55),rgba(224,122,95,.35)),url('https://n.sinaimg.cn/sinacn20123/533/w800h533/20190421/3e36-hvvuiyn4778974.jpg')"><div><span>D17-D20</span><h3>特克斯与伊犁草原</h3><p>八卦城、离街、喀拉峻、琼库什台、库尔德宁。</p></div></article>
+    <article style="background-image:linear-gradient(135deg,rgba(11,19,43,.55),rgba(224,122,95,.35)),url('https://rs-channel.huanqiucdn.cn/imageDir/5bafc07811054242107bb6a03d8a8090u5.jpg')"><div><span>D23-D24</span><h3>独库公路</h3><p>独山子到库车，北段雪山草原，南段峡谷地貌，顺路出疆。</p></div></article>
+  </div>
+</section>
+
+<section id="timeline">
+  <div class="section-head"><h2>纵向时间轴</h2><p>不用地图，用时间轴展示每天去哪里，更清楚、更适合手机查看。</p></div>
+  <div class="timeline">
+    <a class="timeline-item" href="days/day01.html"><span>7.15 · D1</span><b>马鞍山 → 洛阳</b></a>
+<a class="timeline-item" href="days/day02.html"><span>7.16 · D2</span><b>洛阳 → 武威</b></a>
+<a class="timeline-item" href="days/day03.html"><span>7.17 · D3</span><b>武威 → 哈密</b></a>
+<a class="timeline-item" href="days/day04.html"><span>7.18 · D4</span><b>哈密 → 昌吉/阜康</b></a>
+<a class="timeline-item" href="days/day05.html"><span>7.19 · D5</span><b>阜康 → 天山天池 → 阜康</b></a>
+<a class="timeline-item" href="days/day06.html"><span>7.20 · D6</span><b>阜康 → 奎屯/独山子</b></a>
+<a class="timeline-item" href="days/day07.html"><span>7.21 · D7</span><b>奎屯 → 精河/博乐</b></a>
+<a class="timeline-item" href="days/day08.html"><span>7.22 · D8</span><b>精河/博乐 → 赛里木湖</b></a>
+<a class="timeline-item" href="days/day09.html"><span>7.23 · D9</span><b>赛里木湖全天</b></a>
+<a class="timeline-item" href="days/day10.html"><span>7.24 · D10</span><b>赛湖 → 果子沟 → 霍城</b></a>
+<a class="timeline-item" href="days/day11.html"><span>7.25 · D11</span><b>霍城 → 伊昭公路 → 昭苏</b></a>
+<a class="timeline-item" href="days/day12.html"><span>7.26 · D12</span><b>昭苏 → 夏塔 → 昭苏</b></a>
+<a class="timeline-item" href="days/day13.html"><span>7.27 · D13</span><b>昭苏 → 伊宁</b></a>
+<a class="timeline-item" href="days/day14.html"><span>7.28 · D14</span><b>伊宁选衣服</b></a>
+<a class="timeline-item" href="days/day15.html"><span>7.29 · D15</span><b>伊宁 ↔ 赛湖/果子沟婚纱照</b></a>
+<a class="timeline-item" href="days/day16.html"><span>7.30 · D16</span><b>伊宁选片</b></a>
+<a class="timeline-item" href="days/day17.html"><span>7.31 · D17</span><b>伊宁 → 特克斯</b></a>
+<a class="timeline-item" href="days/day18.html"><span>8.1 · D18</span><b>特克斯 → 喀拉峻 → 特克斯</b></a>
+<a class="timeline-item" href="days/day19.html"><span>8.2 · D19</span><b>特克斯 → 琼库什台 → 特克斯</b></a>
+<a class="timeline-item" href="days/day20.html"><span>8.3 · D20</span><b>特克斯 → 库尔德宁/恰西 → 巩留</b></a>
+<a class="timeline-item" href="days/day21.html"><span>8.4 · D21</span><b>巩留休整</b></a>
+<a class="timeline-item" href="days/day22.html"><span>8.5 · D22</span><b>巩留/新源 → 独山子</b></a>
+<a class="timeline-item" href="days/day23.html"><span>8.6 · D23</span><b>独山子 → 独库公路 → 巴音布鲁克</b></a>
+<a class="timeline-item" href="days/day24.html"><span>8.7 · D24</span><b>巴音布鲁克 → 库车</b></a>
+<a class="timeline-item" href="days/day25.html"><span>8.8 · D25</span><b>库车 → 哈密</b></a>
+<a class="timeline-item" href="days/day26.html"><span>8.9 · D26</span><b>哈密 → 中卫/吴忠</b></a>
+<a class="timeline-item" href="days/day27.html"><span>8.10 · D27</span><b>中卫/吴忠 → 郑州</b></a>
+<a class="timeline-item" href="days/day28.html"><span>8.11 · D28</span><b>郑州 → 马鞍山</b></a>
+  </div>
+</section>
+
+<section id="days">
+  <div class="section-head"><h2>每日行程卡片</h2><p>点击每张卡片进入当天二级页面，查看完整攻略。</p></div>
+  <div class="cards">
+<a class="day-card" href="days/day01.html" data-day-card="1">
+<div class="photo" data-day-photo="1"><img src="https://rs-channel.huanqiucdn.cn/imageDir/34545a1f3735e22c8bb8ba20bb3c160au5.jpg" alt="马鞍山 → 洛阳" onerror="this.classList.add('img-error')"><span>7.15 · D1</span><div class="photo-actions" onclick="event.preventDefault();event.stopPropagation();">
+<label class="upload-btn">上传照片<input type="file" accept="image/*" multiple data-day="1"></label>
+<button class="edit-btn" data-edit="1" type="button">编辑</button>
+</div></div>
+<div class="card-body">
+    <p class="kicker">去程 · 去程赶路</p>
+    <h3>马鞍山 → 洛阳</h3>
+    <div class="meta"><span>🚗 约760–820km</span><span>⏱ 8.5–9.5h</span><span>🏨 洛阳</span></div>
+  </div>
+</a>
+<a class="day-card" href="days/day02.html" data-day-card="2">
+<div class="photo" data-day-photo="2"><img src="https://rs-channel.huanqiucdn.cn/imageDir/34545a1f3735e22c8bb8ba20bb3c160au5.jpg" alt="洛阳 → 武威" onerror="this.classList.add('img-error')"><span>7.16 · D2</span><div class="photo-actions" onclick="event.preventDefault();event.stopPropagation();">
+<label class="upload-btn">上传照片<input type="file" accept="image/*" multiple data-day="2"></label>
+<button class="edit-btn" data-edit="2" type="button">编辑</button>
+</div></div>
+<div class="card-body">
+    <p class="kicker">去程 · 长途穿越</p>
+    <h3>洛阳 → 武威</h3>
+    <div class="meta"><span>🚗 约950–1000km</span><span>⏱ 约10h</span><span>🏨 武威</span></div>
+  </div>
+</a>
+<a class="day-card" href="days/day03.html" data-day-card="3">
+<div class="photo" data-day-photo="3"><img src="https://rs-channel.huanqiucdn.cn/imageDir/5bafc07811054242107bb6a03d8a8090u5.jpg" alt="武威 → 哈密" onerror="this.classList.add('img-error')"><span>7.17 · D3</span><div class="photo-actions" onclick="event.preventDefault();event.stopPropagation();">
+<label class="upload-btn">上传照片<input type="file" accept="image/*" multiple data-day="3"></label>
+<button class="edit-btn" data-edit="3" type="button">编辑</button>
+</div></div>
+<div class="card-body">
+    <p class="kicker">去程 · 入疆日</p>
+    <h3>武威 → 哈密</h3>
+    <div class="meta"><span>🚗 约1000–1050km</span><span>⏱ 约10h</span><span>🏨 哈密</span></div>
+  </div>
+</a>
+<a class="day-card" href="days/day04.html" data-day-card="4">
+<div class="photo" data-day-photo="4"><img src="https://rs-channel.huanqiucdn.cn/imageDir/5bafc07811054242107bb6a03d8a8090u5.jpg" alt="哈密 → 昌吉/阜康" onerror="this.classList.add('img-error')"><span>7.18 · D4</span><div class="photo-actions" onclick="event.preventDefault();event.stopPropagation();">
+<label class="upload-btn">上传照片<input type="file" accept="image/*" multiple data-day="4"></label>
+<button class="edit-btn" data-edit="4" type="button">编辑</button>
+</div></div>
+<div class="card-body">
+    <p class="kicker">去程 · 不进乌市</p>
+    <h3>哈密 → 昌吉/阜康</h3>
+    <div class="meta"><span>🚗 约600–650km</span><span>⏱ 6.5–7.5h</span><span>🏨 阜康/昌吉</span></div>
+  </div>
+</a>
+<a class="day-card" href="days/day05.html" data-day-card="5">
+<div class="photo" data-day-photo="5"><img src="https://rs-channel.huanqiucdn.cn/imageDir/34545a1f3735e22c8bb8ba20bb3c160au5.jpg" alt="阜康 → 天山天池 → 阜康" onerror="this.classList.add('img-error')"><span>7.19 · D5</span><div class="photo-actions" onclick="event.preventDefault();event.stopPropagation();">
+<label class="upload-btn">上传照片<input type="file" accept="image/*" multiple data-day="5"></label>
+<button class="edit-btn" data-edit="5" type="button">编辑</button>
+</div></div>
+<div class="card-body">
+    <p class="kicker">北疆过渡 · 轻游适应</p>
+    <h3>阜康 → 天山天池 → 阜康</h3>
+    <div class="meta"><span>🚗 约80–120km</span><span>⏱ 约2h</span><span>🏨 阜康</span></div>
+  </div>
+</a>
+<a class="day-card" href="days/day06.html" data-day-card="6">
+<div class="photo" data-day-photo="6"><img src="https://rs-channel.huanqiucdn.cn/imageDir/5bafc07811054242107bb6a03d8a8090u5.jpg" alt="阜康 → 奎屯/独山子" onerror="this.classList.add('img-error')"><span>7.20 · D6</span><div class="photo-actions" onclick="event.preventDefault();event.stopPropagation();">
+<label class="upload-btn">上传照片<input type="file" accept="image/*" multiple data-day="6"></label>
+<button class="edit-btn" data-edit="6" type="button">编辑</button>
+</div></div>
+<div class="card-body">
+    <p class="kicker">北疆过渡 · 大峡谷</p>
+    <h3>阜康 → 奎屯/独山子</h3>
+    <div class="meta"><span>🚗 约260–300km</span><span>⏱ 约3h</span><span>🏨 独山子/奎屯</span></div>
+  </div>
+</a>
+<a class="day-card" href="days/day07.html" data-day-card="7">
+<div class="photo" data-day-photo="7"><img src="https://www.news.cn/foto/20260202/532f62a0ad7d4338a207cc5f5e2c916c/20260202532f62a0ad7d4338a207cc5f5e2c916c_20260128f3de70e877634d5a890c441e254e919f.jpg" alt="奎屯 → 精河/博乐" onerror="this.classList.add('img-error')"><span>7.21 · D7</span><div class="photo-actions" onclick="event.preventDefault();event.stopPropagation();">
+<label class="upload-btn">上传照片<input type="file" accept="image/*" multiple data-day="7"></label>
+<button class="edit-btn" data-edit="7" type="button">编辑</button>
+</div></div>
+<div class="card-body">
+    <p class="kicker">赛湖前站 · 赛湖前过渡</p>
+    <h3>奎屯 → 精河/博乐</h3>
+    <div class="meta"><span>🚗 约180–230km</span><span>⏱ 约2.5h</span><span>🏨 精河/博乐</span></div>
+  </div>
+</a>
+<a class="day-card" href="days/day08.html" data-day-card="8">
+<div class="photo" data-day-photo="8"><img src="https://www.news.cn/foto/20260202/532f62a0ad7d4338a207cc5f5e2c916c/20260202532f62a0ad7d4338a207cc5f5e2c916c_20260128f3de70e877634d5a890c441e254e919f.jpg" alt="精河/博乐 → 赛里木湖" onerror="this.classList.add('img-error')"><span>7.22 · D8</span><div class="photo-actions" onclick="event.preventDefault();event.stopPropagation();">
+<label class="upload-btn">上传照片<input type="file" accept="image/*" multiple data-day="8"></label>
+<button class="edit-btn" data-edit="8" type="button">编辑</button>
+</div></div>
+<div class="card-body">
+    <p class="kicker">赛湖 · 赛湖第一天</p>
+    <h3>精河/博乐 → 赛里木湖</h3>
+    <div class="meta"><span>🚗 约90–160km</span><span>⏱ 1–2h</span><span>🏨 赛里木湖/清水河</span></div>
+  </div>
+</a>
+<a class="day-card" href="days/day09.html" data-day-card="9">
+<div class="photo" data-day-photo="9"><img src="https://www.news.cn/foto/20260202/532f62a0ad7d4338a207cc5f5e2c916c/20260202532f62a0ad7d4338a207cc5f5e2c916c_20260128f56a114a31134b9f8226746c4aedcfad.jpg" alt="赛里木湖全天" onerror="this.classList.add('img-error')"><span>7.23 · D9</span><div class="photo-actions" onclick="event.preventDefault();event.stopPropagation();">
+<label class="upload-btn">上传照片<input type="file" accept="image/*" multiple data-day="9"></label>
+<button class="edit-btn" data-edit="9" type="button">编辑</button>
+</div></div>
+<div class="card-body">
+    <p class="kicker">赛湖 · 赛湖深度</p>
+    <h3>赛里木湖全天</h3>
+    <div class="meta"><span>🚗 环湖约90km</span><span>⏱ 弹性</span><span>🏨 赛里木湖</span></div>
+  </div>
+</a>
+<a class="day-card" href="days/day10.html" data-day-card="10">
+<div class="photo" data-day-photo="10"><img src="https://www.news.cn/photo/20260513/6802aa2a4230452cb9db7f35706d441c/202605136802aa2a4230452cb9db7f35706d441c_202605130ef088ac87644f42ab412fd4a7920851.jpg" alt="赛湖 → 果子沟 → 霍城" onerror="this.classList.add('img-error')"><span>7.24 · D10</span><div class="photo-actions" onclick="event.preventDefault();event.stopPropagation();">
+<label class="upload-btn">上传照片<input type="file" accept="image/*" multiple data-day="10"></label>
+<button class="edit-btn" data-edit="10" type="button">编辑</button>
+</div></div>
+<div class="card-body">
+    <p class="kicker">伊犁门户 · 果子沟与薰衣草</p>
+    <h3>赛湖 → 果子沟 → 霍城</h3>
+    <div class="meta"><span>🚗 约80–120km</span><span>⏱ 1.5–2h</span><span>🏨 霍城/清水河</span></div>
+  </div>
+</a>
+<a class="day-card" href="days/day11.html" data-day-card="11">
+<div class="photo" data-day-photo="11"><img src="https://www.news.cn/photo/20260513/6802aa2a4230452cb9db7f35706d441c/202605136802aa2a4230452cb9db7f35706d441c_202605130cd621559ee841c6905df8affe03359a.jpg" alt="霍城 → 伊昭公路 → 昭苏" onerror="this.classList.add('img-error')"><span>7.25 · D11</span><div class="photo-actions" onclick="event.preventDefault();event.stopPropagation();">
+<label class="upload-btn">上传照片<input type="file" accept="image/*" multiple data-day="11"></label>
+<button class="edit-btn" data-edit="11" type="button">编辑</button>
+</div></div>
+<div class="card-body">
+    <p class="kicker">昭苏夏塔 · 伊昭公路</p>
+    <h3>霍城 → 伊昭公路 → 昭苏</h3>
+    <div class="meta"><span>🚗 约220km</span><span>⏱ 3–4h</span><span>🏨 昭苏</span></div>
+  </div>
+</a>
+<a class="day-card" href="days/day12.html" data-day-card="12">
+<div class="photo" data-day-photo="12"><img src="https://rs-channel.huanqiucdn.cn/imageDir/34545a1f3735e22c8bb8ba20bb3c160au5.jpg" alt="昭苏 → 夏塔 → 昭苏" onerror="this.classList.add('img-error')"><span>7.26 · D12</span><div class="photo-actions" onclick="event.preventDefault();event.stopPropagation();">
+<label class="upload-btn">上传照片<input type="file" accept="image/*" multiple data-day="12"></label>
+<button class="edit-btn" data-edit="12" type="button">编辑</button>
+</div></div>
+<div class="card-body">
+    <p class="kicker">昭苏夏塔 · 夏塔雪山</p>
+    <h3>昭苏 → 夏塔 → 昭苏</h3>
+    <div class="meta"><span>🚗 约120–150km</span><span>⏱ 2–3h</span><span>🏨 昭苏/夏塔</span></div>
+  </div>
+</a>
+<a class="day-card" href="days/day13.html" data-day-card="13">
+<div class="photo" data-day-photo="13"><img src="https://n.sinaimg.cn/sinacn20123/533/w800h533/20190421/3e36-hvvuiyn4778974.jpg" alt="昭苏 → 伊宁" onerror="this.classList.add('img-error')"><span>7.27 · D13</span><div class="photo-actions" onclick="event.preventDefault();event.stopPropagation();">
+<label class="upload-btn">上传照片<input type="file" accept="image/*" multiple data-day="13"></label>
+<button class="edit-btn" data-edit="13" type="button">编辑</button>
+</div></div>
+<div class="card-body">
+    <p class="kicker">伊宁婚纱 · 婚纱前休整</p>
+    <h3>昭苏 → 伊宁</h3>
+    <div class="meta"><span>🚗 约180km</span><span>⏱ 约3h</span><span>🏨 伊宁</span></div>
+  </div>
+</a>
+<a class="day-card" href="days/day14.html" data-day-card="14">
+<div class="photo" data-day-photo="14"><img src="https://n.sinaimg.cn/sinacn20123/533/w800h533/20190421/3e36-hvvuiyn4778974.jpg" alt="伊宁选衣服" onerror="this.classList.add('img-error')"><span>7.28 · D14</span><div class="photo-actions" onclick="event.preventDefault();event.stopPropagation();">
+<label class="upload-btn">上传照片<input type="file" accept="image/*" multiple data-day="14"></label>
+<button class="edit-btn" data-edit="14" type="button">编辑</button>
+</div></div>
+<div class="card-body">
+    <p class="kicker">伊宁婚纱 · 婚纱准备</p>
+    <h3>伊宁选衣服</h3>
+    <div class="meta"><span>🚗 市区20km内</span><span>⏱ 市区短途</span><span>🏨 伊宁</span></div>
+  </div>
+</a>
+<a class="day-card" href="days/day15.html" data-day-card="15">
+<div class="photo" data-day-photo="15"><img src="https://www.news.cn/photo/20260513/6802aa2a4230452cb9db7f35706d441c/202605136802aa2a4230452cb9db7f35706d441c_202605130ef088ac87644f42ab412fd4a7920851.jpg" alt="伊宁 ↔ 赛湖/果子沟婚纱照" onerror="this.classList.add('img-error')"><span>7.29 · D15</span><div class="photo-actions" onclick="event.preventDefault();event.stopPropagation();">
+<label class="upload-btn">上传照片<input type="file" accept="image/*" multiple data-day="15"></label>
+<button class="edit-btn" data-edit="15" type="button">编辑</button>
+</div></div>
+<div class="card-body">
+    <p class="kicker">伊宁婚纱 · 婚纱照日</p>
+    <h3>伊宁 ↔ 赛湖/果子沟婚纱照</h3>
+    <div class="meta"><span>🚗 约300km</span><span>⏱ 4–5h</span><span>🏨 伊宁/赛湖/果子沟</span></div>
+  </div>
+</a>
+<a class="day-card" href="days/day16.html" data-day-card="16">
+<div class="photo" data-day-photo="16"><img src="https://n.sinaimg.cn/sinacn20123/533/w800h533/20190421/f9b7-hvvuiyn4778933.jpg" alt="伊宁选片" onerror="this.classList.add('img-error')"><span>7.30 · D16</span><div class="photo-actions" onclick="event.preventDefault();event.stopPropagation();">
+<label class="upload-btn">上传照片<input type="file" accept="image/*" multiple data-day="16"></label>
+<button class="edit-btn" data-edit="16" type="button">编辑</button>
+</div></div>
+<div class="card-body">
+    <p class="kicker">伊宁婚纱 · 恢复日</p>
+    <h3>伊宁选片</h3>
+    <div class="meta"><span>🚗 市区20km内</span><span>⏱ 市区短途</span><span>🏨 伊宁</span></div>
+  </div>
+</a>
+<a class="day-card" href="days/day17.html" data-day-card="17">
+<div class="photo" data-day-photo="17"><img src="https://n.sinaimg.cn/sinacn20123/533/w800h533/20190421/3e36-hvvuiyn4778974.jpg" alt="伊宁 → 特克斯" onerror="this.classList.add('img-error')"><span>7.31 · D17</span><div class="photo-actions" onclick="event.preventDefault();event.stopPropagation();">
+<label class="upload-btn">上传照片<input type="file" accept="image/*" multiple data-day="17"></label>
+<button class="edit-btn" data-edit="17" type="button">编辑</button>
+</div></div>
+<div class="card-body">
+    <p class="kicker">特克斯草原 · 八卦城</p>
+    <h3>伊宁 → 特克斯</h3>
+    <div class="meta"><span>🚗 约120–140km</span><span>⏱ 约2h</span><span>🏨 特克斯</span></div>
+  </div>
+</a>
+<a class="day-card" href="days/day18.html" data-day-card="18">
+<div class="photo" data-day-photo="18"><img src="https://n.sinaimg.cn/sinacn20123/533/w800h533/20190421/f9b7-hvvuiyn4778933.jpg" alt="特克斯 → 喀拉峻 → 特克斯" onerror="this.classList.add('img-error')"><span>8.1 · D18</span><div class="photo-actions" onclick="event.preventDefault();event.stopPropagation();">
+<label class="upload-btn">上传照片<input type="file" accept="image/*" multiple data-day="18"></label>
+<button class="edit-btn" data-edit="18" type="button">编辑</button>
+</div></div>
+<div class="card-body">
+    <p class="kicker">特克斯草原 · 喀拉峻草原</p>
+    <h3>特克斯 → 喀拉峻 → 特克斯</h3>
+    <div class="meta"><span>🚗 约80–120km</span><span>⏱ 约2h</span><span>🏨 特克斯/喀拉峻</span></div>
+  </div>
+</a>
+<a class="day-card" href="days/day19.html" data-day-card="19">
+<div class="photo" data-day-photo="19"><img src="https://n.sinaimg.cn/sinacn20123/533/w800h533/20190421/3e36-hvvuiyn4778974.jpg" alt="特克斯 → 琼库什台 → 特克斯" onerror="this.classList.add('img-error')"><span>8.2 · D19</span><div class="photo-actions" onclick="event.preventDefault();event.stopPropagation();">
+<label class="upload-btn">上传照片<input type="file" accept="image/*" multiple data-day="19"></label>
+<button class="edit-btn" data-edit="19" type="button">编辑</button>
+</div></div>
+<div class="card-body">
+    <p class="kicker">特克斯草原 · 山村草原</p>
+    <h3>特克斯 → 琼库什台 → 特克斯</h3>
+    <div class="meta"><span>🚗 约180km</span><span>⏱ 约4h</span><span>🏨 特克斯/琼库什台</span></div>
+  </div>
+</a>
+<a class="day-card" href="days/day20.html" data-day-card="20">
+<div class="photo" data-day-photo="20"><img src="https://rs-channel.huanqiucdn.cn/imageDir/34545a1f3735e22c8bb8ba20bb3c160au5.jpg" alt="特克斯 → 库尔德宁/恰西 → 巩留" onerror="this.classList.add('img-error')"><span>8.3 · D20</span><div class="photo-actions" onclick="event.preventDefault();event.stopPropagation();">
+<label class="upload-btn">上传照片<input type="file" accept="image/*" multiple data-day="20"></label>
+<button class="edit-btn" data-edit="20" type="button">编辑</button>
+</div></div>
+<div class="card-body">
+    <p class="kicker">库尔德宁 · 森林草原</p>
+    <h3>特克斯 → 库尔德宁/恰西 → 巩留</h3>
+    <div class="meta"><span>🚗 约150–200km</span><span>⏱ 约3h</span><span>🏨 巩留</span></div>
+  </div>
+</a>
+<a class="day-card" href="days/day21.html" data-day-card="21">
+<div class="photo" data-day-photo="21"><img src="https://rs-channel.huanqiucdn.cn/imageDir/5bafc07811054242107bb6a03d8a8090u5.jpg" alt="巩留休整" onerror="this.classList.add('img-error')"><span>8.4 · D21</span><div class="photo-actions" onclick="event.preventDefault();event.stopPropagation();">
+<label class="upload-btn">上传照片<input type="file" accept="image/*" multiple data-day="21"></label>
+<button class="edit-btn" data-edit="21" type="button">编辑</button>
+</div></div>
+<div class="card-body">
+    <p class="kicker">独库准备 · 独库前恢复</p>
+    <h3>巩留休整</h3>
+    <div class="meta"><span>🚗 50km内</span><span>⏱ 短途</span><span>🏨 巩留/新源</span></div>
+  </div>
+</a>
+<a class="day-card" href="days/day22.html" data-day-card="22">
+<div class="photo" data-day-photo="22"><img src="https://rs-channel.huanqiucdn.cn/imageDir/34545a1f3735e22c8bb8ba20bb3c160au5.jpg" alt="巩留/新源 → 独山子" onerror="this.classList.add('img-error')"><span>8.5 · D22</span><div class="photo-actions" onclick="event.preventDefault();event.stopPropagation();">
+<label class="upload-btn">上传照片<input type="file" accept="image/*" multiple data-day="22"></label>
+<button class="edit-btn" data-edit="22" type="button">编辑</button>
+</div></div>
+<div class="card-body">
+    <p class="kicker">独库准备 · 独库前夜</p>
+    <h3>巩留/新源 → 独山子</h3>
+    <div class="meta"><span>🚗 约280–330km</span><span>⏱ 3.5–4h</span><span>🏨 独山子</span></div>
+  </div>
+</a>
+<a class="day-card" href="days/day23.html" data-day-card="23">
+<div class="photo" data-day-photo="23"><img src="https://rs-channel.huanqiucdn.cn/imageDir/5bafc07811054242107bb6a03d8a8090u5.jpg" alt="独山子 → 独库公路 → 巴音布鲁克" onerror="this.classList.add('img-error')"><span>8.6 · D23</span><div class="photo-actions" onclick="event.preventDefault();event.stopPropagation();">
+<label class="upload-btn">上传照片<input type="file" accept="image/*" multiple data-day="23"></label>
+<button class="edit-btn" data-edit="23" type="button">编辑</button>
+</div></div>
+<div class="card-body">
+    <p class="kicker">独库 · 独库北段</p>
+    <h3>独山子 → 独库公路 → 巴音布鲁克</h3>
+    <div class="meta"><span>🚗 约280km</span><span>⏱ 6–8h</span><span>🏨 巴音布鲁克</span></div>
+  </div>
+</a>
+<a class="day-card" href="days/day24.html" data-day-card="24">
+<div class="photo" data-day-photo="24"><img src="https://rs-channel.huanqiucdn.cn/imageDir/34545a1f3735e22c8bb8ba20bb3c160au5.jpg" alt="巴音布鲁克 → 库车" onerror="this.classList.add('img-error')"><span>8.7 · D24</span><div class="photo-actions" onclick="event.preventDefault();event.stopPropagation();">
+<label class="upload-btn">上传照片<input type="file" accept="image/*" multiple data-day="24"></label>
+<button class="edit-btn" data-edit="24" type="button">编辑</button>
+</div></div>
+<div class="card-body">
+    <p class="kicker">独库 · 独库南段出疆</p>
+    <h3>巴音布鲁克 → 库车</h3>
+    <div class="meta"><span>🚗 约250–300km</span><span>⏱ 5–6h</span><span>🏨 库车</span></div>
+  </div>
+</a>
+<a class="day-card" href="days/day25.html" data-day-card="25">
+<div class="photo" data-day-photo="25"><img src="https://rs-channel.huanqiucdn.cn/imageDir/5bafc07811054242107bb6a03d8a8090u5.jpg" alt="库车 → 哈密" onerror="this.classList.add('img-error')"><span>8.8 · D25</span><div class="photo-actions" onclick="event.preventDefault();event.stopPropagation();">
+<label class="upload-btn">上传照片<input type="file" accept="image/*" multiple data-day="25"></label>
+<button class="edit-btn" data-edit="25" type="button">编辑</button>
+</div></div>
+<div class="card-body">
+    <p class="kicker">返程 · 正式返程</p>
+    <h3>库车 → 哈密</h3>
+    <div class="meta"><span>🚗 约730–780km</span><span>⏱ 8–9h</span><span>🏨 哈密</span></div>
+  </div>
+</a>
+<a class="day-card" href="days/day26.html" data-day-card="26">
+<div class="photo" data-day-photo="26"><img src="https://rs-channel.huanqiucdn.cn/imageDir/5bafc07811054242107bb6a03d8a8090u5.jpg" alt="哈密 → 中卫/吴忠" onerror="this.classList.add('img-error')"><span>8.9 · D26</span><div class="photo-actions" onclick="event.preventDefault();event.stopPropagation();">
+<label class="upload-btn">上传照片<input type="file" accept="image/*" multiple data-day="26"></label>
+<button class="edit-btn" data-edit="26" type="button">编辑</button>
+</div></div>
+<div class="card-body">
+    <p class="kicker">返程 · 压缩返程</p>
+    <h3>哈密 → 中卫/吴忠</h3>
+    <div class="meta"><span>🚗 约850–950km</span><span>⏱ 9–10h</span><span>🏨 中卫/吴忠</span></div>
+  </div>
+</a>
+<a class="day-card" href="days/day27.html" data-day-card="27">
+<div class="photo" data-day-photo="27"><img src="https://n.sinaimg.cn/sinacn20123/533/w800h533/20190421/3e36-hvvuiyn4778974.jpg" alt="中卫/吴忠 → 郑州" onerror="this.classList.add('img-error')"><span>8.10 · D27</span><div class="photo-actions" onclick="event.preventDefault();event.stopPropagation();">
+<label class="upload-btn">上传照片<input type="file" accept="image/*" multiple data-day="27"></label>
+<button class="edit-btn" data-edit="27" type="button">编辑</button>
+</div></div>
+<div class="card-body">
+    <p class="kicker">返程 · 固定经停郑州</p>
+    <h3>中卫/吴忠 → 郑州</h3>
+    <div class="meta"><span>🚗 约850–950km</span><span>⏱ 9–10h</span><span>🏨 郑州</span></div>
+  </div>
+</a>
+<a class="day-card" href="days/day28.html" data-day-card="28">
+<div class="photo" data-day-photo="28"><img src="https://www.news.cn/foto/20260202/532f62a0ad7d4338a207cc5f5e2c916c/20260202532f62a0ad7d4338a207cc5f5e2c916c_20260128f56a114a31134b9f8226746c4aedcfad.jpg" alt="郑州 → 马鞍山" onerror="this.classList.add('img-error')"><span>8.11 · D28</span><div class="photo-actions" onclick="event.preventDefault();event.stopPropagation();">
+<label class="upload-btn">上传照片<input type="file" accept="image/*" multiple data-day="28"></label>
+<button class="edit-btn" data-edit="28" type="button">编辑</button>
+</div></div>
+<div class="card-body">
+    <p class="kicker">返程 · 安全到家</p>
+    <h3>郑州 → 马鞍山</h3>
+    <div class="meta"><span>🚗 约620–680km</span><span>⏱ 6.5–7.5h</span><span>🏨 马鞍山</span></div>
+  </div>
+</a></div>
+</section>
+
+<section id="energy">
+  
+  <div class="section-head"><h2>补能作战表</h2><p>静态表只写策略；实时桩数、功率、空闲状态以乐道/蔚来、高德、特来电、星星充电当天显示为准。</p></div>
+  <div class="note"><b>铁律：</b>高速按 300km，山区按 220–250km；低于 35% 就补，低于 45% 不进山，独库前夜必须满电。</div>
+  <table class="energy-table"><thead><tr><th>日期</th><th>路段</th><th>里程/车程</th><th>补能策略</th><th>重点风险</th></tr></thead><tbody><tr><td>7.15<br><b>D1</b></td><td><a href='days/day01.html'>马鞍山 → 洛阳</a></td><td>约760–820km<br>8.5–9.5h</td><td>马鞍山满电出发。<br>主补：合肥/阜阳/周口任选2–3次。<br>到洛阳后必须补满，为第二天长途做准备。</td><td>第一天不要直接冲西安，开局过累会影响后面。</td></tr><tr><td>7.16<br><b>D2</b></td><td><a href='days/day02.html'>洛阳 → 武威</a></td><td>约950–1000km<br>约10h</td><td>洛阳满电。<br>主补城市：西安、天水、兰州、武威。<br>不要低电跨过兰州，武威到达后补满。</td><td>西安、兰州城区容易耽误时间，坚决不下城游玩。</td></tr><tr><td>7.17<br><b>D3</b></td><td><a href='days/day03.html'>武威 → 哈密</a></td><td>约1000–1050km<br>约10h</td><td>武威满电。<br>主补：张掖、酒泉、瓜州、星星峡、哈密。<br>星星峡前电量必须≥45%。</td><td>服务区间隔会变长，水和干粮要备足。</td></tr><tr><td>7.18<br><b>D4</b></td><td><a href='days/day04.html'>哈密 → 昌吉/阜康</a></td><td>约600–650km<br>6.5–7.5h</td><td>哈密满电。<br>主补：鄯善/吐鲁番。<br>阜康或昌吉到达后补满。</td><td>吐鲁番段不要低电行驶。</td></tr><tr><td>7.19<br><b>D5</b></td><td><a href='days/day05.html'>阜康 → 天山天池 → 阜康</a></td><td>约80–120km<br>约2h</td><td>阜康/昌吉补满即可。<br>进景区前电量≥60%。</td><td>天池区间车排队时间可能较长，不要安排第二个景区。</td></tr><tr><td>7.20<br><b>D6</b></td><td><a href='days/day06.html'>阜康 → 奎屯/独山子</a></td><td>约260–300km<br>约3h</td><td>阜康满电。<br>石河子作为备选补能。<br>奎屯/独山子补满。</td><td>峡谷边缘风大，拍照不要跨护栏。</td></tr><tr><td>7.21<br><b>D7</b></td><td><a href='days/day07.html'>奎屯 → 精河/博乐</a></td><td>约180–230km<br>约2.5h</td><td>奎屯满电出发。<br>精河/博乐到达后补能。<br>第二天入湖前确保80%以上。</td><td>不要为了多玩半天而牺牲赛湖状态。</td></tr><tr><td>7.22<br><b>D8</b></td><td><a href='days/day08.html'>精河/博乐 → 赛里木湖</a></td><td>约90–160km<br>1–2h</td><td>入湖前补到80%以上。<br>晚上回清水河/博乐方向补能。<br>湖区不赌补能。</td><td>7月旺季自驾票和住宿要提前确认。</td></tr><tr><td>7.23<br><b>D9</b></td><td><a href='days/day09.html'>赛里木湖全天</a></td><td>环湖约90km<br>弹性</td><td>环湖前电量≥70%。<br>清水河/博乐作为主补能。<br>不要等低电再出景区。</td><td>热门停车点容易拥堵，错峰停靠。</td></tr><tr><td>7.24<br><b>D10</b></td><td><a href='days/day10.html'>赛湖 → 果子沟 → 霍城</a></td><td>约80–120km<br>1.5–2h</td><td>清水河/霍城补满。<br>低于40%不去支线。</td><td>7月下旬薰衣草可能不如6月盛花，不要期待过高。</td></tr><tr><td>7.25<br><b>D11</b></td><td><a href='days/day11.html'>霍城 → 伊昭公路 → 昭苏</a></td><td>约220km<br>3–4h</td><td>霍城/清水河满电。<br>伊昭前电量≥80%。<br>到昭苏后补满。</td><td>不夜开、不超车、不低电进山。</td></tr><tr><td>7.26<br><b>D12</b></td><td><a href='days/day12.html'>昭苏 → 夏塔 → 昭苏</a></td><td>约120–150km<br>2–3h</td><td>昭苏满电出发。<br>回城后补电。<br>低于50%不进夏塔支线。</td><td>别穿新鞋；鞋底要防滑。</td></tr><tr><td>7.27<br><b>D13</b></td><td><a href='days/day13.html'>昭苏 → 伊宁</a></td><td>约180km<br>约3h</td><td>昭苏满电。<br>到伊宁补满。<br>婚纱前两天不让车辆低电。</td><td>今晚不喝酒、不吃太咸，避免第二天水肿。</td></tr><tr><td>7.28<br><b>D14</b></td><td><a href='days/day14.html'>伊宁选衣服</a></td><td>市区20km内<br>市区短途</td><td>不跑远。<br>晚上必须补满，为7.29婚纱照做准备。</td><td>不临时换护肤品，不暴晒，不熬夜。</td></tr><tr><td>7.29<br><b>D15</b></td><td><a href='days/day15.html'>伊宁 ↔ 赛湖/果子沟婚纱照</a></td><td>约300km<br>4–5h</td><td>前一晚伊宁满电。<br>清水河作为备用补能点。<br>低于45%先补再拍。</td><td>带暖宝宝、拖鞋、防晒、补妆、一次性雨衣。</td></tr><tr><td>7.30<br><b>D16</b></td><td><a href='days/day16.html'>伊宁选片</a></td><td>市区20km内<br>市区短途</td><td>伊宁补满。<br>为7.31特克斯段准备。</td><td>选片容易加钱，提前定精修预算和上限。</td></tr><tr><td>7.31<br><b>D17</b></td><td><a href='days/day17.html'>伊宁 → 特克斯</a></td><td>约120–140km<br>约2h</td><td>伊宁满电。<br>到特克斯后补能。<br>到达电量建议≥45%。</td><td>八卦城环岛多，开车别急。</td></tr><tr><td>8.1<br><b>D18</b></td><td><a href='days/day18.html'>特克斯 → 喀拉峻 → 特克斯</a></td><td>约80–120km<br>约2h</td><td>特克斯满电。<br>山路前电量≥70%。</td><td>景区内别安排太多换乘点，体力消耗大。</td></tr><tr><td>8.2<br><b>D19</b></td><td><a href='days/day19.html'>特克斯 → 琼库什台 → 特克斯</a></td><td>约180km<br>约4h</td><td>特克斯满电出发。<br>不依赖村内补能。<br>低于65%不进山。</td><td>不夜返、不乱停窄路、不低电进山。</td></tr><tr><td>8.3<br><b>D20</b></td><td><a href='days/day20.html'>特克斯 → 库尔德宁/恰西 → 巩留</a></td><td>约150–200km<br>约3h</td><td>特克斯满电。<br>到巩留补满。<br>到达电量建议≥35%。</td><td>不要相信私家车带小路拉客。</td></tr><tr><td>8.4<br><b>D21</b></td><td><a href='days/day21.html'>巩留休整</a></td><td>50km内<br>短途</td><td>酒店慢充/县城快充补至90%以上。<br>独库前准备日，不让车低电。</td><td>休整日不是浪费，是为了独库安全。</td></tr><tr><td>8.5<br><b>D22</b></td><td><a href='days/day22.html'>巩留/新源 → 独山子</a></td><td>约280–330km<br>3.5–4h</td><td>巩留满电。<br>奎屯作为备选补能。<br>独山子前夜必须满电。</td><td>不满电不上独库。</td></tr><tr><td>8.6<br><b>D23</b></td><td><a href='days/day23.html'>独山子 → 独库公路 → 巴音布鲁克</a></td><td>约280km<br>6–8h</td><td>独山子满电。<br>那拉提/巴音布鲁克作为备选补能。<br>低于45%不继续向南硬开。</td><td>不夜开独库，不随意停车占道。</td></tr><tr><td>8.7<br><b>D24</b></td><td><a href='days/day24.html'>巴音布鲁克 → 库车</a></td><td>约250–300km<br>5–6h</td><td>巴音补能后出发。<br>库车到达后补满。<br>山区前电量≥80%。</td><td>南疆午后很热，别长时间暴晒。</td></tr><tr><td>8.8<br><b>D25</b></td><td><a href='days/day25.html'>库车 → 哈密</a></td><td>约730–780km<br>8–9h</td><td>库车满电。<br>主补：轮台、吐鲁番、鄯善、哈密。<br>不低于30%跑长直路。</td><td>长直路容易犯困，严格轮换驾驶。</td></tr><tr><td>8.9<br><b>D26</b></td><td><a href='days/day26.html'>哈密 → 中卫/吴忠</a></td><td>约850–950km<br>9–10h</td><td>哈密满电。<br>主补：星星峡、瓜州、酒泉、张掖、武威、中卫/吴忠。<br>当天宁可多补一次。</td><td>疲劳比电量更危险。</td></tr><tr><td>8.10<br><b>D27</b></td><td><a href='days/day27.html'>中卫/吴忠 → 郑州</a></td><td>约850–950km<br>9–10h</td><td>中卫/吴忠满电。<br>主补：西安、三门峡/洛阳、郑州。<br>到郑州就休息。</td><td>到郑州后不要继续硬开回马鞍山。</td></tr><tr><td>8.11<br><b>D28</b></td><td><a href='days/day28.html'>郑州 → 马鞍山</a></td><td>约620–680km<br>6.5–7.5h</td><td>郑州满电。<br>阜阳/合肥备用补能。<br>低于35%补，不赌最后一段。</td><td>快到家最容易松懈，最后一天也按规则休息。</td></tr></tbody></table>
+
+</section>
+
+
+<section id="memories">
+  <div class="section-head"><h2>照片回忆录</h2><p>这里会自动汇总你们每天上传的旅途照片，也可以留下旅行寄语。</p></div>
+  <div class="memory-hero">
+    <div>
+      <span>2026.07.15 - 2026.08.11</span>
+      <h3>我们的新疆回忆录</h3>
+      <p>把每天的照片放进对应卡片，首页会自动生成一面旅行照片墙。</p>
+    </div>
+    <div class="memory-stats">
+      <article><b id="memoryPhotoCount">0</b><span>上传照片</span></article>
+      <article><b id="memoryMessageCount">0</b><span>旅行寄语</span></article>
+      <article><b>28</b><span>旅行天数</span></article>
+    </div>
+  </div>
+  <div id="memoryWall" class="memory-wall empty">
+    <p>还没有上传照片。游玩当天在每日卡片里点击“上传照片”，这里会自动生成回忆录。</p>
+  </div>
+
+  <div class="message-board">
+    <div class="board-head">
+      <div><h3>旅行留言墙</h3><p>记录路上的一句话、一个心情、一个瞬间。</p></div>
+      <button id="addMessageBtn" type="button">添加寄语</button>
+    </div>
+    <div id="messageList" class="message-list"></div>
+  </div>
+</section>
+
+<section id="checklist">
+  
+  <div class="section-head"><h2>出发准备</h2><p>建议出发前 2–3 周完成核心预订，出发前 3 天完成车辆检查。</p></div>
+  <div class="check-grid">
+    <div class="check-card"><h3>证件订单</h3><ul><li>身份证、驾驶证、行驶证</li><li>车辆保险电子版、酒店订单截图</li><li>景区预约与婚纱照合同</li></ul></div>
+    <div class="check-card"><h3>车辆装备</h3><ul><li>胎压、轮胎、雨刮、玻璃水</li><li>补胎液/充气泵、随车充/放电枪</li><li>拖车绳、手电筒、反光背心</li></ul></div>
+    <div class="check-card"><h3>衣物药品</h3><ul><li>冲锋衣、薄羽绒、速干衣</li><li>防晒帽、墨镜、徒步鞋</li><li>肠胃药、晕车药、电解质、驱蚊</li></ul></div>
+  </div>
+
+</section>
+</main>
+<footer>新疆2026自驾旅行助手 · V4 高端无地图版</footer>
+
+
+
+
+<div id="albumModal" class="album-modal" aria-hidden="true">
+  <div class="album-sheet">
+    <button class="album-close" type="button" data-close-album>关闭</button>
+    <h3 id="albumTitle">编辑相册</h3>
+    <p class="album-tip">可删除单张照片，也可用“上移/下移”调整轮播顺序。第一张就是每日卡片封面。</p>
+    <div id="albumEditor" class="album-editor"></div>
+  </div>
+</div>
+
+<div id="photoViewer" class="photo-viewer" aria-hidden="true">
+  <button type="button" class="viewer-close" data-close-viewer>关闭</button>
+  <img id="viewerImg" alt="旅行照片">
+  <p id="viewerCaption"></p>
+</div>
+
+<div id="messageModal" class="album-modal" aria-hidden="true">
+  <div class="album-sheet message-sheet">
+    <button class="album-close" type="button" data-close-message>关闭</button>
+    <h3>添加旅行寄语</h3>
+    <label>地点/标题<input id="msgTitle" placeholder="例如：赛里木湖日落"></label>
+    <label>留言内容<textarea id="msgText" placeholder="写下此刻想说的话"></textarea></label>
+    <button id="saveMessageBtn" type="button" class="save-message">保存寄语</button>
+  </div>
+</div>
+
+<script>
+(function(){
+const P='xj_trip_photos_';
+const M='xj_trip_messages_v1';
+const MAX=1400,Q=.82;
+const DAY_META = [
+'7.15 D1 马鞍山→洛阳','7.16 D2 洛阳→武威','7.17 D3 武威→哈密','7.18 D4 哈密→昌吉/阜康',
+'7.19 D5 天山天池','7.20 D6 独山子大峡谷','7.21 D7 奎屯→博乐','7.22 D8 赛里木湖',
+'7.23 D9 赛里木湖全天','7.24 D10 果子沟/霍城','7.25 D11 伊昭公路/昭苏','7.26 D12 夏塔',
+'7.27 D13 昭苏→伊宁','7.28 D14 伊宁选衣服','7.29 D15 婚纱照日','7.30 D16 伊宁选片',
+'7.31 D17 特克斯','8.1 D18 喀拉峻','8.2 D19 琼库什台','8.3 D20 库尔德宁/恰西',
+'8.4 D21 巩留休整','8.5 D22 独山子','8.6 D23 独库北段','8.7 D24 独库南段/库车',
+'8.8 D25 库车→哈密','8.9 D26 哈密→中卫/吴忠','8.10 D27 中卫/吴忠→郑州','8.11 D28 郑州→马鞍山'
+];
+
+function read(day){try{return JSON.parse(localStorage.getItem(P+day)||'[]')}catch(e){return[]}}
+function write(day,arr){try{localStorage.setItem(P+day,JSON.stringify(arr))}catch(e){alert('照片太多，本地存储空间不够。建议每一天保留3-6张精选照片。')}}
+function readMessages(){try{return JSON.parse(localStorage.getItem(M)||'[]')}catch(e){return[]}}
+function writeMessages(arr){localStorage.setItem(M,JSON.stringify(arr))}
+function resize(file){return new Promise((resolve,reject)=>{const r=new FileReader();r.onload=()=>{const im=new Image();im.onload=()=>{const ratio=Math.min(1,MAX/im.width),w=Math.round(im.width*ratio),h=Math.round(im.height*ratio);const c=document.createElement('canvas');c.width=w;c.height=h;c.getContext('2d').drawImage(im,0,0,w,h);resolve(c.toDataURL('image/jpeg',Q))};im.onerror=reject;im.src=r.result};r.onerror=reject;r.readAsDataURL(file)})}
+
+function apply(day){
+  const arr=read(day),box=document.querySelector('[data-day-photo="'+day+'"]');
+  if(!box) return;
+  if(arr.length){
+    const im=box.querySelector('img'); im.src=arr[0];
+    let badge=box.querySelector('.user-photo-badge');
+    if(!badge){badge=document.createElement('em');badge.className='user-photo-badge';box.appendChild(badge)}
+    badge.textContent=arr.length+'张旅途照片';
+  }
+}
+
+function startSlides(){
+  for(let day=1; day<=28; day++){
+    const box=document.querySelector('[data-day-photo="'+day+'"]');
+    const arr=read(day);
+    if(!box||arr.length<2) continue;
+    const im=box.querySelector('img'); let k=0;
+    setInterval(()=>{const latest=read(day); if(latest.length<2)return; k=(k+1)%latest.length; im.src=latest[k]},3300+(day%5)*250);
+  }
+}
+
+function renderWall(){
+  const wall=document.getElementById('memoryWall'); if(!wall) return;
+  let photos=[]; let total=0;
+  for(let day=1; day<=28; day++){
+    const arr=read(day); total+=arr.length;
+    arr.forEach((src,idx)=>photos.push({day,src,idx,meta:DAY_META[day-1]}));
+  }
+  document.getElementById('memoryPhotoCount').textContent=total;
+  if(!photos.length){wall.className='memory-wall empty'; wall.innerHTML='<p>还没有上传照片。游玩当天在每日卡片里点击“上传照片”，这里会自动生成回忆录。</p>'; return;}
+  wall.className='memory-wall';
+  wall.innerHTML=photos.map((p,i)=>`<button class="memory-photo memory-size-${i%5}" data-view="${i}"><img src="${p.src}" alt="${p.meta}"><span>${p.meta}</span></button>`).join('');
+  document.querySelectorAll('[data-view]').forEach(btn=>btn.onclick=()=>openViewer(photos[Number(btn.dataset.view)]));
+}
+
+function openViewer(p){
+  document.getElementById('viewerImg').src=p.src;
+  document.getElementById('viewerCaption').textContent=p.meta;
+  document.getElementById('photoViewer').classList.add('show');
+}
+function closeViewer(){document.getElementById('photoViewer').classList.remove('show')}
+
+function openAlbum(day){
+  const modal=document.getElementById('albumModal');
+  document.getElementById('albumTitle').textContent='编辑相册 · '+DAY_META[day-1];
+  modal.dataset.day=day;
+  renderAlbum(day);
+  modal.classList.add('show');
+}
+function closeAlbum(){document.getElementById('albumModal').classList.remove('show')}
+function renderAlbum(day){
+  const box=document.getElementById('albumEditor');
+  const arr=read(day);
+  if(!arr.length){box.innerHTML='<p class="album-empty">这一天还没有上传照片。</p>';return;}
+  box.innerHTML=arr.map((src,i)=>`<div class="album-item">
+    <img src="${src}" alt="照片${i+1}">
+    <div class="album-actions">
+      <b>${i===0?'封面':'第 '+(i+1)+' 张'}</b>
+      <button data-up="${i}" ${i===0?'disabled':''}>上移</button>
+      <button data-down="${i}" ${i===arr.length-1?'disabled':''}>下移</button>
+      <button data-del="${i}">删除</button>
+    </div>
+  </div>`).join('');
+  box.querySelectorAll('[data-up]').forEach(b=>b.onclick=()=>{const i=Number(b.dataset.up);const a=read(day);[a[i-1],a[i]]=[a[i],a[i-1]];write(day,a);renderAlbum(day);apply(day);renderWall()});
+  box.querySelectorAll('[data-down]').forEach(b=>b.onclick=()=>{const i=Number(b.dataset.down);const a=read(day);[a[i],a[i+1]]=[a[i+1],a[i]];write(day,a);renderAlbum(day);apply(day);renderWall()});
+  box.querySelectorAll('[data-del]').forEach(b=>b.onclick=()=>{const i=Number(b.dataset.del);const a=read(day);a.splice(i,1);write(day,a);renderAlbum(day);apply(day);renderWall()});
+}
+
+function renderMessages(){
+  const list=document.getElementById('messageList'); if(!list)return;
+  const arr=readMessages();
+  document.getElementById('memoryMessageCount').textContent=arr.length;
+  if(!arr.length){list.innerHTML='<p class="empty-msg">还没有寄语，写下第一句吧。</p>';return;}
+  list.innerHTML=arr.map((m,i)=>`<article><span>${m.date}</span><h4>${escapeHtml(m.title)}</h4><p>${escapeHtml(m.text)}</p><button data-msg-del="${i}">删除</button></article>`).join('');
+  list.querySelectorAll('[data-msg-del]').forEach(b=>b.onclick=()=>{const a=readMessages();a.splice(Number(b.dataset.msgDel),1);writeMessages(a);renderMessages()});
+}
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
+function openMessage(){document.getElementById('messageModal').classList.add('show')}
+function closeMessage(){document.getElementById('messageModal').classList.remove('show')}
+
+document.querySelectorAll('input[data-day]').forEach(input=>input.addEventListener('change',async function(){
+  const day=this.dataset.day;
+  const files=Array.from(this.files||[]).filter(f=>f.type.startsWith('image/')).slice(0,12);
+  if(!files.length)return;
+  const old=read(day),out=[];
+  for(const f of files){try{out.push(await resize(f))}catch(e){}}
+  write(day,old.concat(out).slice(-18));
+  apply(day); renderWall(); this.value='';
+}));
+
+document.querySelectorAll('[data-edit]').forEach(btn=>btn.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();openAlbum(Number(this.dataset.edit))}));
+document.querySelectorAll('[data-close-album]').forEach(b=>b.onclick=closeAlbum);
+document.querySelectorAll('[data-close-viewer]').forEach(b=>b.onclick=closeViewer);
+document.querySelectorAll('[data-close-message]').forEach(b=>b.onclick=closeMessage);
+document.getElementById('addMessageBtn')?.addEventListener('click',openMessage);
+document.getElementById('saveMessageBtn')?.addEventListener('click',()=>{
+  const title=document.getElementById('msgTitle').value.trim()||'旅途一刻';
+  const text=document.getElementById('msgText').value.trim();
+  if(!text){alert('先写一句寄语吧');return;}
+  const arr=readMessages();
+  arr.unshift({title,text,date:new Date().toLocaleDateString('zh-CN')});
+  writeMessages(arr.slice(0,60));
+  document.getElementById('msgTitle').value='';document.getElementById('msgText').value='';
+  closeMessage();renderMessages();
+});
+
+for(let i=1;i<=28;i++)apply(i);
+startSlides();renderWall();renderMessages();
+})();
+</script>
+
+</body>
+</html>
